@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "abecode_pvfarma",
+    "password": "Warewolf15",
+    "database": "abecode_pvfarmacia",
+    "host": "mysql3001.mochahost.com",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "abecode_pvfarma",
+    "password": "Warewolf15",
+    "database": "abecode_pvfarmacia",
+    "host": "mysql3001.mochahost.com",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "abecode_pvfarma",
+    "password": "Warewolf15",
+    "database": "abecode_pvfarmacia",
+    "host": "mysql3001.mochahost.com",
+    "port": 3306,
+    "dialect": "mysql"
+  }
+}

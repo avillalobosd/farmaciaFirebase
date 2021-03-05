@@ -1,0 +1,64 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Punto de Venta",
+  "dependencies": {
+    "@material-ui/core": "^4.7.1",
+    "aws-sdk": "^2.595.0",
+    "bcrypt-nodejs": "0.0.3",
+    "concurrently": "^5.0.0",
+    "electron-is-dev": "^1.1.0",
+    "export-from-json": "^1.1.4",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "json2xls": "^0.1.2",
+    "path": "^0.12.7",
+    "pg": "^7.14.0",
+    "pg-hstore": "^2.3.3",
+    "pouchdb": "^7.1.1",
+    "q": "^1.5.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "react-split-pane": "^0.1.89",
+    "react-to-pdf": "0.0.10",
+    "wait-on": "^3.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"npm run start\" \"wait-on http://localhost:3000 && electron .\"",
+    "postinstall": "install-app-deps",
+    "electron-builder": "electron-builder --ia32 --x64 -w",
+    "electron": "electron .",
+    "package-win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "main": "public/main.js",
+  "devDependencies": {
+    "electron-builder": "^21.2.0",
+    "electron-packager": "^14.1.0",
+    "electron": "^7.1.2"
+  }
+}
